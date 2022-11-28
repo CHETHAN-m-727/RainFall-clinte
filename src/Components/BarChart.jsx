@@ -5,7 +5,7 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function BarChart({ chartData }) {
   return (
-    <div style={{ width: 1000 }}>
+    <div style={{ width: 850, height: 400 }}>
       <Bar data={chartData} />
     </div>
   );

@@ -1,12 +1,10 @@
 import React from "react";
-// import FetchYear from "./Components/FetchYear";
-import MultiSelect from "./Components/MultiSelect";
+import FetchYear from "./Components/FetchYear";
 
 function App() {
   return (
     <div>
-      {/* <FetchYear /> */}
-      <MultiSelect />
+      <FetchYear />
     </div>
   );
 }

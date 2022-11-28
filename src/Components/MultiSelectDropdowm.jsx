@@ -22,7 +22,7 @@ const initialChartData = {
   datasets: [],
 };
 
-function FetchYear() {
+function MultiSelectDropdowm() {
   const [yearData, setYearData] = useState([]);
   const [year, setYear] = useState("");
   const [citydata, setCityData] = useState([]);
@@ -79,17 +79,14 @@ function FetchYear() {
   return (
     <div className="main">
       <div>
-        {/* year */}
         <select onChange={(e) => setYear(e.target.value)}>
           {yearData.map((year, index) => (
-            <option placeholder="year" key={index} value={year}>
+            <option key={index} value={year}>
               {year}
             </option>
           ))}
         </select>
       </div>
-
-      {/* multiSelect */}
       <div className=" multiSelect">
         <MultiSelect
           options={citydata}
@@ -104,7 +101,6 @@ function FetchYear() {
         submit
       </button>
 
-      {/* BarChart */}
       {barChartData.datasets.length !== 0 && (
         <BarChart chartData={barChartData} />
       )}
@@ -112,4 +108,4 @@ function FetchYear() {
   );
 }
 
-export default FetchYear;
+export default MultiSelectDropdowm;
